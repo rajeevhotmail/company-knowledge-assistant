@@ -7,7 +7,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import DirectoryLoader
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
-from langchain.llms import HuggingFacePipeline
+from langchain_community.llms import HuggingFacePipeline
 
 # 1. Load documents
 if not os.path.exists('documents_dir'):
@@ -24,24 +24,31 @@ text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=20
 texts = text_splitter.split_documents(documents)
 
 # 3. Create embeddings and vectorstore
-embeddings = HuggingFaceEmbeddings()
+embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 vectorstore = FAISS.from_documents(texts, embeddings)
 
 # 4. Load the language model
-model_name = "google/flan-t5-base"  # Or your preferred model
+model_name = "google/flan-t5-base"  # You can try a larger model if you have the resources
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
 
 # Create a HuggingFacePipeline
-pipe = pipeline("text2text-generation", model=model, tokenizer=tokenizer)
+pipe = pipeline(
+    "text2text-generation",
+    model=model,
+    tokenizer=tokenizer,
+    max_new_tokens=100,  # Increased for longer responses
+    temperature=0.7,  # Adjust for more or less randomness in responses
+)
 llm = HuggingFacePipeline(pipeline=pipe)
 
 # 5. Set up the conversational chain
 memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
 qa_chain = ConversationalRetrievalChain.from_llm(
     llm=llm,
-    retriever=vectorstore.as_retriever(),
-    memory=memory
+    retriever=vectorstore.as_retriever(search_kwargs={"k": 3}),  # Retrieve top 3 most relevant chunks
+    memory=memory,
+    verbose=True  # Set to False in production
 )
 
 # 6. Define functions for getting responses and the chat loop
