@@ -1,0 +1,84 @@
+RAJEEV SHARMA
+Block 43, Flat # 1,
+Bahadurpura Colony
+Hyderabad 500064 India.
+Phone: +91-9441349416
+Email: rajeev.india@gmail.com
+
+Profile
+•	Over 14 years of experience in software development.
+•	Proficiency in developing applications using C, C++ over UNIX and Windows.
+•	Over 9 years experience in developing applications onSS7 suite of application layer protocols (ISUP, MAP, CAP and TCAP and SCCP).
+•	Well versed in TCP/IP suite of protocols and in socket programming.
+•	Developed Windows applications using Microsoft Foundation Classes and WIN32 API.
+•	Developed applications on embedded systems (Win CE and Palm OS).
+
+
+Technical Skills
+
+Languages
+Languages (Beginner level)
+API
+Stacks
+Operating Systems
+Databases
+Others		C, C++ and VC++ .
+Java, Perl and ProC
+STL, ACE and Win32
+HP open call version 3.1/3.2, HP USP SIP stack, Data Kinetics, TAPI
+HP-Unix, Linux, Windows, Windows-CE and Palm-OS
+Oracle 9i
+Bluetooth, Wireless connectivity and pocket pc
+
+
+
+
+Education
+
+M.Sc.  (Physics),  Osmania University, Hyderabad.
+
+Work Experience
+
+Computer Corporation, Hyderabad
+Software Associates Global, Hyderabad
+XIUS India Ltd. (A division of Megasoft Ltd.)	July 97 – Aug 00
+Nov 00 – May 03
+May 03 – August 12
+(Current Position: Technical Solutions Architect)
+
+
+
+
+ 
+Role: Technical Solutions Architect 	 Period: May 2009 –Aug 12
+Description:  The work involves writing prototype applications, writing technical specification documents for development projects, reviewing high and low level design documents for engineering department, requirements gathering and pre-sales support.
+Notable achievement in this role: 1. I wrote a prototype GGSN which has Gi, Gn and Gp interfaces.
+2. Using TAPI wrote an application to identify Calling Party Number.
+
+Role: Project Manager, Designer, Team Lead and programmer 	Period: April 98 - May 2009
+Description:  I designed and managed development of Roaming Management Server (RMS) - a solution which allows network operator A to use bilateral agreements of operator B. RMS is based on dual MSISDN and dual IMSI on a single SIM card. A subscriber is “always present” through both the MSISDNs for both voice and SMS calls. As a result of dual MSISDN, international roaming calls are cheaper to subscribers.
+MAP provider layer of RMS is built directly over TCAP layer. A RMS service comprises two or more MAP services.
+The product is running for GlobalSim in PCM network of USA.
+Tools: HP Open Call USP-M Programming environment. ASN.1 Decoder/Encoder Nokalva
+Operating System and Software: HP-UX
+
+Role: Project Leader
+Description:  Developed SCP to charge GSM prepaid subscribers. The SCP is based on CAMEL phase 2 protocol. The SCP achieves 99.999% uptime by running in active-standby mode. The SCP runs in TuneTalk network of Malaysia.
+Tools: HP Open Call USP-M Programming environment. ASN.1 Decoder/Encoder Nokalva
+Operating System and Software: Linux
+
+Role: Module Lead
+Description:  Developed two modules of XIUS Home Location Register namely Fault Recovery and Subscription Change. These modules implement following MAP services RESET, RESTORE DATA, ISD, DSD and CANCEL LOCATION.XIUS HLR is 3GPP Release 8 compliant. The HLR is currently running in TuneTalk, PCM and Aspider networks.
+Tools: HP Open Call 3.1 Programming environment. ASN.1 Decoder/Encoder Nokalva
+Operating System and Software:Linux
+
+Role: Module Lead
+Description: Wrote GPRS Tunneling Protocol (For a roaming solution which uses dual  IMSI and single MSISDN). GTP version 0 and GTP version 1 were implemented. This product is InstaRoam and is currently running in BPL network for Etisalat operator.
+Operating System and Software:  Linux
+
+Some other works:
+•	Developed embedded applications on Palm OS and Windows CE.
+•	Developed Java applet to display stock values of Bombay Stock Exchange
+•	Designed the network interface of XIUS SIP application server
+•	Designed the network interface of XIUS RADIUS server
+•	Worked on application based on TAPI and SMPP and CIMD protocols
